@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BF22F9929C624D900DF1BF3 /* BmiCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF22F9829C624D900DF1BF3 /* BmiCategory.swift */; };
+		9BF22F9B29C62B2400DF1BF3 /* BmiHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF22F9A29C62B2400DF1BF3 /* BmiHistory.swift */; };
+		9BF22F9D29C62BFF00DF1BF3 /* BmiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF22F9C29C62BFF00DF1BF3 /* BmiData.swift */; };
+		9BF22F9F29C6341800DF1BF3 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 9BF22F9E29C6341800DF1BF3 /* Readme.md */; };
+		9BF22FA329C6350400DF1BF3 /* SCR-20230319-bwio.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF22FA129C6350400DF1BF3 /* SCR-20230319-bwio.png */; };
+		9BF22FA429C6350400DF1BF3 /* SCR-20230319-bwmf.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF22FA229C6350400DF1BF3 /* SCR-20230319-bwmf.png */; };
 		9BFA199029C60DA1006FC81B /* BodyMassIndexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA198F29C60DA1006FC81B /* BodyMassIndexApp.swift */; };
 		9BFA199229C60DA1006FC81B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA199129C60DA1006FC81B /* ContentView.swift */; };
 		9BFA199429C60DA2006FC81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFA199329C60DA2006FC81B /* Assets.xcassets */; };
 		9BFA199729C60DA2006FC81B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFA199629C60DA2006FC81B /* Preview Assets.xcassets */; };
+		9BFA19A029C60E1F006FC81B /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA199F29C60E1F006FC81B /* CalculatorView.swift */; };
+		9BFA19A229C60E2F006FC81B /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA19A129C60E2F006FC81B /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BF22F9829C624D900DF1BF3 /* BmiCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiCategory.swift; sourceTree = "<group>"; };
+		9BF22F9A29C62B2400DF1BF3 /* BmiHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiHistory.swift; sourceTree = "<group>"; };
+		9BF22F9C29C62BFF00DF1BF3 /* BmiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiData.swift; sourceTree = "<group>"; };
+		9BF22F9E29C6341800DF1BF3 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		9BF22FA129C6350400DF1BF3 /* SCR-20230319-bwio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SCR-20230319-bwio.png"; sourceTree = "<group>"; };
+		9BF22FA229C6350400DF1BF3 /* SCR-20230319-bwmf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SCR-20230319-bwmf.png"; sourceTree = "<group>"; };
 		9BFA198C29C60DA1006FC81B /* BodyMassIndex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyMassIndex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFA198F29C60DA1006FC81B /* BodyMassIndexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassIndexApp.swift; sourceTree = "<group>"; };
 		9BFA199129C60DA1006FC81B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9BFA199329C60DA2006FC81B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BFA199629C60DA2006FC81B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BFA199F29C60E1F006FC81B /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		9BFA19A129C60E2F006FC81B /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +48,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BF22FA029C6342E00DF1BF3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9BF22FA129C6350400DF1BF3 /* SCR-20230319-bwio.png */,
+				9BF22FA229C6350400DF1BF3 /* SCR-20230319-bwmf.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		9BFA198329C60DA1006FC81B = {
 			isa = PBXGroup;
 			children = (
+				9BF22FA029C6342E00DF1BF3 /* Images */,
+				9BF22F9E29C6341800DF1BF3 /* Readme.md */,
 				9BFA198E29C60DA1006FC81B /* BodyMassIndex */,
 				9BFA198D29C60DA1006FC81B /* Products */,
 			);
@@ -52,9 +79,14 @@
 			isa = PBXGroup;
 			children = (
 				9BFA198F29C60DA1006FC81B /* BodyMassIndexApp.swift */,
+				9BFA199F29C60E1F006FC81B /* CalculatorView.swift */,
 				9BFA199129C60DA1006FC81B /* ContentView.swift */,
+				9BFA19A129C60E2F006FC81B /* HistoryView.swift */,
+				9BF22F9829C624D900DF1BF3 /* BmiCategory.swift */,
+				9BF22F9A29C62B2400DF1BF3 /* BmiHistory.swift */,
 				9BFA199329C60DA2006FC81B /* Assets.xcassets */,
 				9BFA199529C60DA2006FC81B /* Preview Content */,
+				9BF22F9C29C62BFF00DF1BF3 /* BmiData.swift */,
 			);
 			path = BodyMassIndex;
 			sourceTree = "<group>";
@@ -126,7 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BFA199729C60DA2006FC81B /* Preview Assets.xcassets in Resources */,
+				9BF22FA429C6350400DF1BF3 /* SCR-20230319-bwmf.png in Resources */,
 				9BFA199429C60DA2006FC81B /* Assets.xcassets in Resources */,
+				9BF22F9F29C6341800DF1BF3 /* Readme.md in Resources */,
+				9BF22FA329C6350400DF1BF3 /* SCR-20230319-bwio.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +173,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BFA199229C60DA1006FC81B /* ContentView.swift in Sources */,
+				9BFA19A229C60E2F006FC81B /* HistoryView.swift in Sources */,
+				9BFA19A029C60E1F006FC81B /* CalculatorView.swift in Sources */,
+				9BF22F9929C624D900DF1BF3 /* BmiCategory.swift in Sources */,
 				9BFA199029C60DA1006FC81B /* BodyMassIndexApp.swift in Sources */,
+				9BF22F9B29C62B2400DF1BF3 /* BmiHistory.swift in Sources */,
+				9BF22F9D29C62BFF00DF1BF3 /* BmiData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

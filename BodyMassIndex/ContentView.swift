@@ -6,21 +6,42 @@
 //
 
 import SwiftUI
-
+enum Pages: String {
+    case calculator = "Calculator"
+    case history = "History"
+}
 struct ContentView: View {
+    @State private var activePage: Pages = Pages.calculator
+    let pages = [Pages.calculator, Pages.history]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Picker("ActivePage", selection: $activePage){
+                    ForEach(pages, id: \.self) { page in
+                        Text(page.rawValue)
+                    }
+                    
+                }.pickerStyle(.segmented)
+                    .navigationTitle("Body Mass Index")
+                    .padding()
+                
+                if activePage == Pages.calculator {
+                    CalculatorView()
+                } else {
+                    HistoryView()
+                }
+            }.frame(
+                maxWidth: .infinity,
+                maxHeight: .infinity,
+                alignment: .topLeading
+            )
         }
-        .padding()
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(BmiData())
     }
 }
