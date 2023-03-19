@@ -51,8 +51,7 @@ func determineBMICategory(_ bmi: Double) -> BmiCategory {
     case 0...18.4: return BmiCategory(category: "Underweight", color: .blue)
     case 18.5...24.9: return BmiCategory(category: "Normal", color: .green)
     case 25...39.9: return BmiCategory(category: "Overweight", color: .yellow)
-    case 40...Double.infinity : return BmiCategory(category: "Obese", color: .orange)
-    default: return BmiCategory(category: "Cannot Determine", color: .primary)
+    default : return BmiCategory(category: "Obese", color: .orange)
     }
 }
 
