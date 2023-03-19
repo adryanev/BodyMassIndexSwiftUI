@@ -14,7 +14,7 @@ struct HistoryView: View {
         Form {
             List(data.data.reversed(), id: \.self){ entry in
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(entry.date, format: .dateTime.day().month().year().hour().minute())
+                    Text("\(entry.date.formatted(date: .abbreviated, time: .shortened))")
                         .fontWeight(.light)
                         .foregroundColor(.gray)
                     HStack {

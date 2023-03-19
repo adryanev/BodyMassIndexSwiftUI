@@ -11,16 +11,16 @@ struct CalculatorView: View {
     @State var weight: Double = 70
     @State var height: Double = 172
     @EnvironmentObject var data: BmiData
-
+    
     
     var body: some View {
         let result = calculateBMI(weight: weight, height: height)
         VStack(spacing: 15) {
-            BmiComponent(title: "Weight (kg)", defaultValue: 70 ){ value in
+            BmiComponent(title: "Weight (kg)", defaultValue: 70 , sliderRange: 50...200){ value in
                 self.weight = value
             }
             Divider()
-            BmiComponent(title: "Height (cm)", defaultValue: 160){ value in
+            BmiComponent(title: "Height (cm)", defaultValue: 160, sliderRange: 50...200){ value in
                 self.height = value
             }
             Divider()
@@ -69,6 +69,7 @@ struct CalculatorView_Previews: PreviewProvider {
 struct BmiComponent: View {
     let title: String
     @State var defaultValue: Double
+    let sliderRange: ClosedRange<Double>
     let onValueChanged: (_ value: Double) -> Void
     
     var body: some View {
@@ -84,7 +85,7 @@ struct BmiComponent: View {
                     self.defaultValue = newValue
                     onValueChanged(newValue)
                 }
-            ), in: 0...250
+            ), in: sliderRange
             )
             
         }

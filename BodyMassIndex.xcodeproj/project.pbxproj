@@ -84,9 +84,9 @@
 				9BFA19A129C60E2F006FC81B /* HistoryView.swift */,
 				9BF22F9829C624D900DF1BF3 /* BmiCategory.swift */,
 				9BF22F9A29C62B2400DF1BF3 /* BmiHistory.swift */,
+				9BF22F9C29C62BFF00DF1BF3 /* BmiData.swift */,
 				9BFA199329C60DA2006FC81B /* Assets.xcassets */,
 				9BFA199529C60DA2006FC81B /* Preview Content */,
-				9BF22F9C29C62BFF00DF1BF3 /* BmiData.swift */,
 			);
 			path = BodyMassIndex;
 			sourceTree = "<group>";
